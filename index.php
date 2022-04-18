@@ -1,7 +1,7 @@
 <?php
 define('Myheader', TRUE);
 define('Myfooter', TRUE);
-include_once 'header.html';
+include_once 'header.php';
 
 /* $sql = "SELECT profile_image FROM user WHERE username = ?";
 
@@ -24,19 +24,38 @@ if ($stmt = mysqli_prepare($link, $sql)) {
 } */
 
 ?>
-<div class="img1"></div>
+<div class="img1">
+<div class="container">
+        <h1>Quick Currency Converter</h1>
+        <div class="box">
+            <div class="left_box">
+                <select name="currency" class="currency"></select>
+                <input type="number" name="" id="num">
+            </div>
+            <div class="right_box">
+                <select name="currency" class="currency"></select>
+                <input type="text" name="" id="ans" disabled>
+            </div>
+        </div>
+        <button class="btn" id="btn">Convert</button>
+    </div>
+</div>
 
-<div style="height:500px;background-color:blue;font-size:36px">
-In this website,you can buy or sell the NFT art. 
+<div class ="index-div">
+    <p>You can buy or exchange the virtual currencies
+        <br> or national currencies here.</p>
+    <a class="index-btn" href="register.php">Join</a>
 </div>
 
 <div class="img2"></div>
 
-<div style="height:500px;background-color:blue;font-size:36px">
-In this website,you can buy or sell the NFT art. 
+<div class ="index-div" >
+    <p>You can view the virtual currency real time exchange rates here.</p>
+    <a class="index-btn" href="register.php">Join</a>
 </div>
 
 <div class="img3"></div>
+
 
 <?php
 include_once 'footer.php';

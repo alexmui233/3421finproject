@@ -41,7 +41,7 @@ nav ul li a{
 
 }
 
-a.active,a:hover{
+a.active, a:hover{
     background: #5c5c5c;
     color: #fed046;
     transition: .5s;
@@ -166,5 +166,99 @@ a.active,a:hover{
     /* The image used */
     background-image: url('https://forexspringboard.com/wp-content/uploads/2019/07/exchange-rates-and-international-trade-950x500.jpg');
 }
-
+.index-btn{
+    font-size: 20px; 
+    text-decoration: none;
+    width: 250px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    border-color: white;
+    padding: 15px 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index-div{
+    height: 400px;
+    background-color:#373736;
+    font-size:36px;
+}
+.index-div p{
+    text-align: center;
+    padding: 70px;
+    color: white;
+}
+.index-div a:hover{
+    color: white;
+    transition: .5s;
+}
 /* index styling ending */
+
+/*quick converter styling start*/
+.container{
+    background-color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    width: 490px;
+  }
+  
+  h1{
+    color: #364547;
+    margin-left: 72px;
+    margin-bottom: 0.5em;
+    font-family: sans-serif;
+  }
+  
+  
+  .container .box{
+    width: 100%;
+    display: flex;
+  }
+  
+  .box div{
+    width: 100%;
+  }
+  
+  select{
+    width: 95%;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: #66ffcc;
+    outline: none;
+    color: black;
+    margin: 0.2em 0;
+    padding: 0 1em;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  
+  input{
+    width: 95%;
+    height: 40px;
+    font-size: 1em;
+    margin: 0.2em 0;
+    border-radius: 10px;
+    border: none;
+    background: #cccccc;
+    outline: none;
+    padding: 0 1em;
+  }
+  
+  
+  .btn{
+    width: 98%;
+    height: 40px;
+    background: #364547;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.5em 0;
+  }
+
+  /*quick converter styling end*/
