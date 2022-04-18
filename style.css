@@ -198,14 +198,14 @@ a.active, a:hover{
 
 /*quick converter styling start*/
 .container{
-    background-color: white;
+    background-color: #373736;
     padding: 10px 24px;
     border-radius: 20px;
     width: 490px;
   }
   
   h1{
-    color: #364547;
+    color: #faa91f;
     margin-left: 72px;
     margin-bottom: 0.5em;
     font-family: sans-serif;
@@ -226,9 +226,9 @@ a.active, a:hover{
     height: 40px;
     font-size: 1.2em;
     cursor: pointer;
-    background: #66ffcc;
+    background: grey;
     outline: none;
-    color: black;
+    color: #faa91f;
     margin: 0.2em 0;
     padding: 0 1em;
     border-radius: 10px;
