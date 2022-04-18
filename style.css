@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: montserrat;
+    
+}
+
+/*Bernard: header styling start*/
+
+nav{
+    background-color: #373736;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: #faa91f;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #faa91f;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+
+a.active,a:hover{
+    background: #5c5c5c;
+    color: #fed046;
+    transition: .5s;
+}
+
+.hcbtn{
+    font-size: 30px;
+    color: #faa91f;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#headcheck{
+    display: none;
+}
+@media(max-width: 952px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px) {
+    .hcbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #373736;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #fed046;
+    }
+    #headcheck:checked ~ ul{
+        left: 0;
+    }
+}
+/*header styling end*/
+
+/*footer styling start*/
+
+
+.footer{
+    padding: 3rem;
+    background-color: #373736;
+}
+.social{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #faa91f;
+    font-size: 24px;
+}
+.social a{
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    opacity: 0.7;
+}
+.footer-list{
+    color: #faa91f;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+.footer-list li a{
+    color: inherit;
+    text-decoration: none;
+}
+.footer-list li{
+    display: inline-block;
+    padding: 1rem;
+}
+
+
+/*footer styling end*/
+/* index styling start */
+.img1, .img2, .img3 {
+    /* The image used */
+    background-image: url('https://media.discordapp.net/attachments/946633729894391838/965631876008132688/unknown.png?width=721&height=481');
+  
+    /* Full height */
+    height: 100%; 
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img1 {
+    /* The image used */
+    background-image: url('https://media.discordapp.net/attachments/946633729894391838/965631876008132688/unknown.png?width=721&height=481');
+}
+.img2 {
+    /* The image used */
+    background-image: url('https://doqvf81n9htmm.cloudfront.net/data/heidilin_146/0Currency/Virtual/1920_shutterstock_608089037.jpg');
+}
+.img3 {
+    /* The image used */
+    background-image: url('https://forexspringboard.com/wp-content/uploads/2019/07/exchange-rates-and-international-trade-950x500.jpg');
+}
+
+/* index styling ending */
