@@ -1,9 +1,6 @@
 <?php
 include_once 'header.php';
 
-// Include config file
-require_once 'inc\register.inc.php';
-
 // Define variables and initialize with empty values
 $username = $password = $confirmpwd = $email  = "";
 $username_err = $password_err = $confirmpwd_err = $email_err = "";
@@ -88,7 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate password
     if(empty(trim($_POST["password"]))){
         $password_err = "Please enter a password.";     
-    } elseif(strlen(trim($_POST["password"])) < 2){//要改翻6
+    } elseif(strlen(trim($_POST["password"])) < 6){    
         $password_err = "Password must have at least 6 characters.";
     } else{
         $password = trim($_POST["password"]);
@@ -139,45 +136,60 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{ font: 14px sans-serif; }
+        textarea {resize: none;}
+        .wrapper{ width: 360px; padding: 20px; }
+    </style>
+</script>
+</head>
+
+
 <body style="background-color: rgb(32, 34, 37);">
 
 <div class="parallax-2">
 
     <section class="signupform">
-            <h2>Signup</h2>                
+            <h2>REGISTER</h2>                
             <div>
             </div>
            
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
                 
-                <div class="signup-item">
+                <div class="form-group">
                     <label for="username">Username </label>
                     <input type="username" name="username" class="form-control" placeholder="Username">
                 </div>
-            
-                <div class="signup-item">
-                    <label>E-mail</label>
-                    <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+                <br>
+                <div class="form-group">
+                    <label>Email </label>
+                    <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>"  placeholder="Email">
                     <span class=""><?php echo $email_err; ?></span> 
                 </div>
-
-                <div class="signup-item">
+                <br>
+                <div class="form-group">
                     <label for="password">Password <br></label>
                     <input type="password" name="password" class="form-control" placeholder="Password">
                 </div>
-
-                <div class="signup-item">
+                <br>
+                <div class="form-group">
                     <label for="confirmpwd">Confirm password </label>
                     <input type="password" name="confirmpwd" class="form-control" placeholder="Confirm password">
                 </div>
-                
-                <br>
-                <div class="g-recaptcha" data-sitekey="6LfADE4fAAAAAMksGMbGSHicRXf-A1CceGM2srtb"></div>
+
                 <br>
                 <div>
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                    <input type="reset" class="btn btn-secondary ml-2" value="Reset">
-                </div>
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-secondary ml-2" value="Reset">
+            </div>
+
             </form>
 
         <?php

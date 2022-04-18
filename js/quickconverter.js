@@ -1,5 +1,5 @@
 const select = document.querySelectorAll(".currency");
-const btn = document.getElementById("btn");
+const btn = document.getElementById("qcbtn");
 const num = document.getElementById("num");
 const ans = document.getElementById("ans");
 
@@ -23,9 +23,9 @@ btn.addEventListener("click", () => {
   let value = num.value;
 
   if (currency1 != currency2) {
-    convert(currency1, currency2, value);
+    convert1(currency1, currency2, value);
   } else {
-    alert("Choose Different Currencies !!!");
+    alert("Please choose different currencies");
   }
 });
 
@@ -39,4 +39,20 @@ function convert(currency1, currency2, value) {
       console.log(Object.values(val.rates)[0]);
       ans.value = Object.values(val.rates)[0];
     });
+}
+
+function convert1(currency1, currency2, value){
+  let curr1=currency1;
+  let curr2=currency2;
+  let val=value;
+  fetch("http://localhost/3421finproject/quickconverter.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        },
+  body: "curr1="+ curr1 +"&curr2="+ curr2 +"&val="+ val,})
+  .then((response) => response.text())
+  .then((res) => (ans.value = res));
+  //.then((res) => (console.log(res)));
+
 }

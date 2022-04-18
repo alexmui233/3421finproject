@@ -1,3 +1,6 @@
+<?php if(!defined('Myfooter')){
+    exit('Access denied');
+}?>
 <html>
     <body>
         <footer class="footer">

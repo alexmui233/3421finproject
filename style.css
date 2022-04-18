@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: "Poppins", sans-serif;sans-serif;
     
 }
 
@@ -100,6 +101,74 @@ a.active, a:hover{
 }
 /*header styling end*/
 
+
+.signupform{
+    margin-top: 50px;
+    width: 450px;
+    height: max-content;
+    background: rgba(83, 82, 82, 0.7);
+    padding: 4rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    border-radius: 10px;
+}
+.signupform h2{
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+.signupform p{
+    font-size: 20px;
+
+}
+
+.signupform a{
+    text-decoration: none;
+}
+.signupform a:hover{
+    color: rgb(229, 232, 235);
+}
+
+.signup-item{
+    padding: 10px;
+.signup-btn{
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(32, 129, 226);
+    border: 1px solid rgb(32, 129, 226);
+}   border: 1px solid rgb(32, 129, 226);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*footer styling start*/
 
 
@@ -157,6 +226,10 @@ a.active, a:hover{
 .img1 {
     /* The image used */
     background-image: url('https://media.discordapp.net/attachments/946633729894391838/965631876008132688/unknown.png?width=721&height=481');
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .img2 {
     /* The image used */
@@ -197,27 +270,25 @@ a.active, a:hover{
 /* index styling ending */
 
 /*quick converter styling start*/
-.container{
+.qccontainer{
     background-color: #373736;
     padding: 10px 24px;
     border-radius: 20px;
     width: 490px;
   }
   
-  h1{
+.qcheader{
     color: #faa91f;
-    margin-left: 72px;
     margin-bottom: 0.5em;
-    font-family: sans-serif;
   }
   
   
-  .container .box{
+  .qccontainer .qcbox{
     width: 100%;
     display: flex;
   }
   
-  .box div{
+  .qcbox div{
     width: 100%;
   }
   
@@ -249,7 +320,7 @@ a.active, a:hover{
   }
   
   
-  .btn{
+  .qcbtn{
     width: 98%;
     height: 40px;
     background: #364547;
@@ -262,3 +333,47 @@ a.active, a:hover{
   }
 
   /*quick converter styling end*/
+
+  /*Login page*/
+
+.loginform{
+    margin-top: 50px;
+    width: 500px;
+    background: rgba(83, 82, 82, 0.7);
+    padding: 5rem;
+    text-align: center;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.loginform h2{
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+.loginform p{
+    font-size: 20px;
+
+}
+
+.loginform a{
+    text-decoration: none;
+}
+.loginform a:hover{
+    color: rgb(229, 232, 235);
+}
+
+.login-item{
+    padding: 10px;
+}
+
+.login-btn{
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(32, 129, 226);
+    border: 1px solid rgb(32, 129, 226);
+}

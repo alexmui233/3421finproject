@@ -2,6 +2,7 @@
 define('Myheader', TRUE);
 define('Myfooter', TRUE);
 include_once 'header.php';
+require_once 'functions.php';
 
 /* $sql = "SELECT profile_image FROM user WHERE username = ?";
 
@@ -25,20 +26,21 @@ if ($stmt = mysqli_prepare($link, $sql)) {
 
 ?>
 <div class="img1">
-<div class="container">
-        <h1>Quick Currency Converter</h1>
-        <div class="box">
-            <div class="left_box">
+<div class="qccontainer">
+        <h1 class="qcheader">Quick Currency Converter</h1>
+        <div class="qcbox">
+            <div>
                 <select name="currency" class="currency"></select>
                 <input type="number" name="" id="num">
             </div>
-            <div class="right_box">
+            <div>
                 <select name="currency" class="currency"></select>
                 <input type="text" name="" id="ans" disabled>
             </div>
         </div>
-        <button class="btn" id="btn">Convert</button>
+        <button class="qcbtn" id="qcbtn">Convert</button>
     </div>
+    <script src="js/quickconverter.js"></script>
 </div>
 
 <div class ="index-div">
@@ -50,7 +52,8 @@ if ($stmt = mysqli_prepare($link, $sql)) {
 <div class="img2"></div>
 
 <div class ="index-div" >
-    <p>You can view the virtual currency real time exchange rates here.</p>
+    <p>You can view the virtual currenc
+        y real time exchange rates here.</p>
     <a class="index-btn" href="register.php">Join</a>
 </div>
 
