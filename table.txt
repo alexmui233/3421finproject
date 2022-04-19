@@ -7,3 +7,19 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) 
+
+CREATE TABLE exchange(
+  currency varchar(20) NOT NULL,
+  value FLOAT(30,20) NOT NULL,
+  update_date varchar(50) NOT NULL,
+  PRIMARY KEY (currency)
+)
+
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDEUR',0,'0');
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDUSD',0,'0');
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDJPY',0,'0');
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDCNY',0,'0');
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDBTC',0,'0');
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDETH',0,'0');
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDADA',0,'0');
+INSERT INTO exchange(currency,value,update_date) VALUES('HKDDog',0,'0');

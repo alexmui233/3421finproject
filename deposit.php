@@ -49,7 +49,7 @@ $currency_of_coins=array("HKDBTC","HKDETH","HKDADA","HKDDog");
     }
 ?>
 
-//sho
+//show the deposit
 
 
 <html>

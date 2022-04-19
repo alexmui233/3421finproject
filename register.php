@@ -1,4 +1,6 @@
 <?php
+define('Myheader', TRUE);
+define('Myfooter', TRUE);
 include_once 'header.php';
 
 // Define variables and initialize with empty values
@@ -143,6 +145,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Sign Up</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    
     <style>
         body{ font: 14px sans-serif; }
         textarea {resize: none;}
@@ -154,7 +164,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <body style="background-color: rgb(32, 34, 37);">
 
+
+
+
+
 <div class="parallax-2">
+
 
     <section class="signupform">
             <h2>REGISTER</h2>                
@@ -185,10 +200,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
 
                 <br>
-                <div>
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-secondary ml-2" value="Reset">
-            </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit">
+                    <input type="reset" class="btn btn-secondary btn-lg btn-block" value="Reset">
+                </div>
 
             </form>
 

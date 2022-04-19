@@ -96,7 +96,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <body style="background-color: rgb(32, 34, 37);">
         <div class="parallax-3">
             
-            <section  class="loginform">
+            <section class="loginform">
                 <h2>Login</h2>
                 <p>Please fill in your credentials to login.</p>
 

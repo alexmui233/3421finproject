@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;sans-serif;
+    font-family: "Poppins", "sans-serif";
     
 }
 
@@ -131,38 +131,21 @@ a.active, a:hover{
     color: rgb(229, 232, 235);
 }
 
+
 .signup-item{
     padding: 10px;
-.signup-btn{
+}
+
+/* .signup-btn{
     font-size: 16px;
     padding: 12px 20px;
     border-radius: 10px;
     color: white;
     background-color: rgb(32, 129, 226);
     border: 1px solid rgb(32, 129, 226);
-}   border: 1px solid rgb(32, 129, 226);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   border: 1px solid rgb(32, 129, 226);
+} 
+ */
 
 
 
@@ -334,7 +317,7 @@ a.active, a:hover{
 
   /*quick converter styling end*/
 
-  /*Login page*/
+  /*Login page start*/
 
 .loginform{
     margin-top: 50px;
@@ -377,3 +360,14 @@ a.active, a:hover{
     background-color: rgb(32, 129, 226);
     border: 1px solid rgb(32, 129, 226);
 }
+/*Login page end*/
+/*profile page start*/
+.profilebackdiv{
+    background-color: #373736; 
+    width: 800px; 
+    height: 600px; 
+    margin: 0px auto; 
+    padding: 50px;  
+    border-radius: 10px;
+}
+/*profile page end*/
