@@ -1,4 +1,6 @@
 <?php
+define('Myheader', TRUE);
+define('Myfooter', TRUE);
 include_once 'header.php';
 
 // Define variables and initialize with empty values
