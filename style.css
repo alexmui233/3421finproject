@@ -8,6 +8,10 @@
     font-family: "Poppins", "sans-serif";
     
 }
+body {
+    background-color: rgb(32, 34, 37);
+}
+
 
 /*Bernard: header styling start*/
 
@@ -290,7 +294,7 @@ a.active, a:hover{
   }
   
   
-  input{
+  .qcinput{
     width: 95%;
     height: 40px;
     font-size: 1em;
@@ -365,10 +369,24 @@ a.active, a:hover{
 .profilebackdiv{
     background-color: #373736; 
     width: 800px; 
-    height: 600px; 
+    height: max-content; 
     margin: 0px auto; 
     padding: 50px;  
     border-radius: 10px;
+}
+.reformdivinput{
+    height: 40px;
+    background: grey;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    padding: 4px;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
 }
 /*profile page end*/
 
@@ -430,6 +448,16 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     }
 }
 /* record page end */
+/* exchange_rate page start */
+
+/* exchange_rate page end */
+
+/* deposit page start */
+
+
+/* deposit page end */
+
+
 /*
 .ercontainer{
     padding: 48px;
@@ -471,13 +499,18 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     transform: scale(1) rotateZ(0deg);
 }
 
-.erlabel::after{
-    content: "";
-    border: 2px solid #27ae60;
+.erlabegn-items: center;
+    l::a
+    display: flex;fter{
+    justify-content:content: "";
+    border: 2px soli center;d #27ae60;
     width: 24px;
     height: 24px;
-    position: absolute;
-    left: -42px;
+    pliion: absolute;
+    a;lig;
     top: -6px;
     border-radius: 50%;
 }*/
+
+.space{
+    padding: 5rem;}

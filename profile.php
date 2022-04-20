@@ -2,14 +2,13 @@
 define('Myheader', TRUE);
 define('Myfooter', TRUE);
 include_once 'header.php';
-
-
 ?>
+
 <html>
 
     <body style="background-color: rgb(32, 34, 37);">
 
-    <div style="height: 100vh;  width: 100%; background-color: #222438; padding: 100px">
+    <div style="height: max-content;  width: 100%; padding: 100px">
 
         <div class="profilebackdiv">
             <div class="profilediv">
@@ -34,23 +33,44 @@ include_once 'header.php';
                     $query=$stmt->get_result();
                     
                     foreach ($query as $row){?>
-                        <div>
+                    <div>
                         <form class="" action="">
                                 <fieldset class="" style="border: none;">
                                     
-                                    <div class="">
-                                        <label for="" style="color:#faa91f">Username: </label>
-                                        <input class="reformdivinput" type="text" name="username" value="<?php echo $row['username'];?>" readonly><br>
-                                        <br>
-                                        <label for="" style="color:#faa91f">Password: </label>
-                                        <input class="reformdivinput" type="password" name="password" value="<?php echo $row['password'];?>" readonly>
+                                    <div style="text-align: center;">
+                                        <label for="" style="color:#faa91f">Username: </label><br>
+                                        <input class="reformdivinput" type="text" name="username" value="<?php echo $row['username'];?>" readonly>
                                         <br><br>
-                                        <label for="" style="color:#faa91f">Email: </label>
+                                        <label for="" style="color:#faa91f">Email: </label><br>
                                         <input class="reformdivinput" type="email" name="email" value="<?php echo $row['email'];?>" readonly>
                                         <br><br>
-                                        <label for="" style="color:#faa91f">HKD: </label>
+                                        <label for="" style="color:#faa91f">HKD: </label><br>
                                         <input class="reformdivinput" type="text" name="password" value="<?php echo $row['HKD'];?>" readonly>
-                                        <br>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">CNY: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['CNY'];?>" readonly>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">JPY: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['JPY'];?>" readonly>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">EUR: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['EUR'];?>" readonly>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">USD: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['USD'];?>" readonly>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">Bitcoin: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['BTC'];?>" readonly>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">Ethereum: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['ETH'];?>" readonly>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">Cardeno: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['ADA'];?>" readonly>
+                                        <br><br>
+                                        <label for="" style="color:#faa91f">Doge Coin: </label><br>
+                                        <input class="reformdivinput" type="text" name="password" value="<?php echo $row['Dog'];?>" readonly>
+                                        <br><br>
                                         </div>
                                 </fieldset>
                         </form>
@@ -72,8 +92,6 @@ include_once 'header.php';
 
     </div>
 
+</html>
 
-
-    </div>
-  
 <?php include_once 'footer.php'; ?>

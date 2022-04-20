@@ -30,6 +30,7 @@ require_once 'config.php';
             <?php if(isset($_SESSION["username"])){?>
                 <li><a href="exchange_rate.php">Exchange Rate</a></li>
                 <li><a href="deposit.php">Deposit</a></li>
+                <li><a href="record.php">Record</a></li>
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="logout.php">Logout</a></li>
             <?php } 
