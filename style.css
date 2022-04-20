@@ -371,3 +371,62 @@ a.active, a:hover{
     border-radius: 10px;
 }
 /*profile page end*/
+
+
+/* record page start */
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+/* Wrapper */
+.wrapper {
+    padding: 8rem 0 6rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        padding: 4rem 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .wrapper {
+        padding: 3rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 2rem 0 0.1rem 0;
+    }
+}
+.recordcontent {
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 3%);
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+/* Inner */
+.inner {
+    margin: 0 auto;
+    width: 75rem;
+    max-width: calc(100% - 6rem);
+}
+
+@media screen and (max-width: 480px) {
+    .inner {
+        max-width: calc(100% - 3rem);
+    }
+}
+/* record page end */
