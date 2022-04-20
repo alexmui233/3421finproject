@@ -13,14 +13,6 @@ include_once 'api.php';
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<style>
-		.container {
-		max-width: 1320px;
-		width: 100%;
-padding-right: var(--bs-gutter-x,.75rem);
-padding-left: var(--bs-gutter-x,.75rem);
-margin-right: auto;
-margin-left: auto;
-		}
 		.btn-group label,
 		.container p {
 			font-size: 20px;
@@ -31,7 +23,7 @@ margin-left: auto;
 		}
 	</style>
 </head>
-<body>
+
 	
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
