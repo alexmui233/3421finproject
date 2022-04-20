@@ -78,19 +78,19 @@ include_once 'api.php';
 		<div class="row">
 			<div class="btn-group">
 				<input type="radio" class="btn-check" name="depositradio" id="depositradio11" value="HKDETH">
-				<label class="btn btn-outline-primary" for="depositradio9">HKD to ETH</label>
+				<label class="btn btn-outline-primary" for="depositradio11">HKD to ETH</label>
 
 				<input type="radio" class="btn-check" name="depositradio" id="depositradio12" value="ETHHKD">
-				<label class="btn btn-outline-primary" for="depositradio10">ETH to HKD</label>
+				<label class="btn btn-outline-primary" for="depositradio12">ETH to HKD</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="btn-group">
 				<input type="radio" class="btn-check" name="depositradio" id="depositradio13" value="HKDADA">
-				<label class="btn btn-outline-primary" for="depositradio9">HKD to ADA</label>
+				<label class="btn btn-outline-primary" for="depositradio13">HKD to ADA</label>
 
 				<input type="radio" class="btn-check" name="depositradio" id="depositradio14" value="ADAHKD">
-				<label class="btn btn-outline-primary" for="depositradio10">ADA to HKD</label>
+				<label class="btn btn-outline-primary" for="depositradio13">ADA to HKD</label>
 			</div>
 		</div>
 		<div class="row">

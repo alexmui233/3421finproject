@@ -4,17 +4,17 @@ CREATE TABLE `user` (
   `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `HKD` float(30,20) NOT NULL,
-  `CNY` float(30,20) NOT NULL,
-  `JPY` float(30,20) NOT NULL,
-  `EUR` float(30,20) NOT NULL,
-  `USD` float(30,20) NOT NULL,
-  `ETH` float(30,20) NOT NULL,
-  `BTC` float(30,20) NOT NULL,
-  `ADA` float(30,20) NOT NULL,
-  `Dog` float(30,20) NOT NULL,
+  `CNY` float(30,20) NULL,
+  `JPY` float(30,20) NULL,
+  `EUR` float(30,20) NULL,
+  `USD` float(30,20) NULL,
+  `ETH` float(30,20) NULL,
+  `BTC` float(30,20) NULL,
+  `ADA` float(30,20) NULL,
+  `Dog` float(30,20) NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT DEFAULT CHARSET=utf8mb4
+)
 
 CREATE TABLE exchange(
   currency varchar(20) NOT NULL,
