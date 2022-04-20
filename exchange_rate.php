@@ -12,7 +12,6 @@ include_once 'api.php';
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-	
 	<div class="form-check">
 	<input class="form-check-input" type="checkbox" id="converter" name="converter1" value="HKDEUR">
     <label for="HKDEUR"> HKD to EURO</label>
@@ -20,9 +19,7 @@ include_once 'api.php';
 	
 	<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Default checkbox
-  </label>
+  <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
   	</div>
 	<!-- <br>
     <input type="checkbox" id="converter" name="converter2" value="HKDUSD">

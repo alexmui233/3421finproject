@@ -430,3 +430,54 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     }
 }
 /* record page end */
+/*
+.ercontainer{
+    padding: 48px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ercontainer .group{
+    padding: 8px 48px;
+    margin: 8px;
+}
+
+.erinput[type="checkbox"]{
+    display: none;
+}
+
+.erlabel{
+    position: relative;
+}
+
+.erlabel::before{
+    content: "";
+    background: url("assets/check-circle.svg");
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -44px;
+    top: -8px;
+
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54,0.01,0,1.49);
+}
+
+.erinput[type="checkbox"]:checked + label::before{
+    transform: scale(1) rotateZ(0deg);
+}
+
+.erlabel::after{
+    content: "";
+    border: 2px solid #27ae60;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -6px;
+    border-radius: 50%;
+}*/

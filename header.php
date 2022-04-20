@@ -11,6 +11,7 @@ require_once 'config.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
     <title>moneyexchange</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,6 +28,7 @@ require_once 'config.php';
         <ul>
                 <li><a href="index.php">Home</a></li>
             <?php if(isset($_SESSION["username"])){?>
+                <li><a href="exchange_rate.php">Exchange Rate</a></li>
                 <li><a href="deposit.php">Deposit</a></li>
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="logout.php">Logout</a></li>

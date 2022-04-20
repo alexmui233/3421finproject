@@ -11,7 +11,7 @@ include_once 'header.php';
 
     <div style="height: 100vh;  width: 100%; background-color: #222438; padding: 100px">
 
-        <div class="profilebackdiv" style="">
+        <div class="profilebackdiv">
             <div class="profilediv">
                 <h1 style="color: #faa91f;">My Profile</h1>
                 <h2 class="" style="color: #faa91f;">Your can view your account information in here.</h2>

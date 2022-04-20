@@ -61,7 +61,7 @@ include_once 'api.php';
 	<input type="radio" id="converter" name="converter" value="DogHKD">
     <label for="HKDDog"> Doge to HKD</label><br>
 	
-    Plase input the Value to exchange:<input type="number" name="value" value=0>
+    Plase input the Value to exchange:<input type="number" name="value" required="required" pattern="[0-9]{1,20}">
     <input type="submit" value="Deposit">
 </form>
 </html>
@@ -140,17 +140,35 @@ include_once 'api.php';
 		elseif($_POST['converter']=="USDHKD"){
 			$change=1/($_POST['value']*$db_data_value[7]);
 		}
-		
-		$sql = "INSERT INTO record (username,from_currency,to_currency,datetime,value) VALUES (?,?,?,?,?);";
-		$stmt = mysqli_prepare($link, $sql);
 		$From=substr($_POST['converter'],0,3);
-		//print($From);
 		$To=substr($_POST['converter'],3,6);
-		//print($To);
-		$date_of_record=date("Y-m-d H:i:s");
-		mysqli_stmt_bind_param($stmt, "ssssd", $_SESSION["username"],$From,$To,$date_of_record,$change);
-		if(mysqli_stmt_execute($stmt)){echo "SUCCESS";}
-		else{echo "Please try later.";}
+		$sql = "SELECT * FROM user where username = ?";
+		$stmt = mysqli_prepare($link, $sql);
+		mysqli_stmt_bind_param($stmt, "s",$_SESSION["username"]);
+		if(mysqli_stmt_execute($stmt)){
+			$query=$stmt->get_result();
+				foreach ($query as $row){
+					$From_currency=$row[$From];
+					$To_currency=$row[$To];
+				}
+				echo $From_currency;
+				echo $To_currency;
+				if ($_POST['value']<$From_currency){
+					$From_currency=$From_currency-$_POST['value'];
+					$To_currency=$To_currency+$change;
+					$sql = "UPDATE user set ".$From." = ?,".$To." = ? where username = ?;";
+					$stmt = mysqli_prepare($link, $sql);
+					mysqli_stmt_bind_param($stmt, "dds",$From_currency,$To_currency,$_SESSION["username"]);
+					if(mysqli_stmt_execute($stmt)){
+						$sql = "INSERT INTO record (username,from_currency,to_currency,datetime,value) VALUES (?,?,?,?,?);";
+						$stmt = mysqli_prepare($link, $sql);
+						$date_of_record=date("Y-m-d H:i:s");
+						mysqli_stmt_bind_param($stmt, "ssssd", $_SESSION["username"],$From,$To,$date_of_record,$change);
+						if(mysqli_stmt_execute($stmt)){echo "SUCCESS";}
+						else{echo "Please try later.";}
+					}else{echo "Please try later.";}
+			    }else{echo "You donot have enough currency.";} 
+		}else{echo "Please try later.";}
     }
 ?>
 

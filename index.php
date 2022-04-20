@@ -31,11 +31,11 @@ if ($stmt = mysqli_prepare($link, $sql)) {
         <div class="qcbox">
             <div>
                 <select name="currency" class="currency"></select>
-                <input type="number" name="" id="num">
+                <input class="qcinput" type="number" name="" id="num">
             </div>
             <div>
                 <select name="currency" class="currency"></select>
-                <input type="text" name="" id="ans" disabled>
+                <input class="qcinput" type="text" name="" id="ans" disabled>
             </div>
         </div>
         <button class="qcbtn" id="qcbtn">Convert</button>
