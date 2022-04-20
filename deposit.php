@@ -90,16 +90,16 @@ include_once 'api.php';
 				<label class="btn btn-outline-primary" for="depositradio13">HKD to ADA</label>
 
 				<input type="radio" class="btn-check" name="depositradio" id="depositradio14" value="ADAHKD">
-				<label class="btn btn-outline-primary" for="depositradio13">ADA to HKD</label>
+				<label class="btn btn-outline-primary" for="depositradio14">ADA to HKD</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="btn-group">
 				<input type="radio" class="btn-check" name="depositradio" id="depositradio15" value="HKDDog">
-				<label class="btn btn-outline-primary" for="depositradio9">HKD to Dog</label>
+				<label class="btn btn-outline-primary" for="depositradio15">HKD to Dog</label>
 
 				<input type="radio" class="btn-check" name="depositradio" id="depositradio16" value="DogHKD">
-				<label class="btn btn-outline-primary" for="depositradio10">Dog to HKD</label>
+				<label class="btn btn-outline-primary" for="depositradio16">Dog to HKD</label>
 			</div>
 		</div>
 		<div class="row g-3" style="margin: 10px auto;">
